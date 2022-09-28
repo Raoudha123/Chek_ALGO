@@ -1,0 +1,29 @@
+ALGORITHM sentence
+VAR
+    sentence: STRING;
+    L:=0:INTEGER;
+    number:=1:INTEGER;
+    vowels_number:=0:INTEGER;
+BEGIN
+    FOR i FROM 0 TO sentence.length-1 STEP  DO
+        L:=sentence.length;
+        IF (sentence[i]==' ') THEN
+            number:=number+1
+        END_IF
+        SWITCH (sentence[i]) DO
+            
+            'a' : vowels_number=vowels_number+1; Break;
+            'e' : vowels_number=vowels_number+1;Break;
+            'u' : vowels_number=vowels_number+1;Break;
+            'i' : vowels_number=vowels_number+1;Break;
+            'o' : vowels_number=vowels_number+1;Break;
+            'y' : vowels_number=vowels_number+1; Break;
+             default : Break;
+        END_SWITCH 
+        END_IF
+    END_FOR
+    Write L;
+    Write number;
+    Write vowels_number;
+
+END
