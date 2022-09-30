@@ -1,0 +1,19 @@
+ALGORITHM Linear_check_point
+VAR
+    Arr1 : ARRAY_OF INTEGER;
+     Arr2: ARRAY_OF INTEGER;
+     i:=0: INTEGER;
+     j:=0: INTEGER;
+     sum:=0: INTEGER;
+
+
+BEGIN
+    FOR i FROM 0 TO Arr1.length-1 STEP  DO
+    FOR j FROM 0 TO Arr2.length-1 STEP  DO
+    IF (Arr1[j]!=Arr2[j]) THEN
+        sum=sum+Arr1[j];
+    END_IF
+    END_FOR
+        i:=i+1;
+    END_FOR
+END
