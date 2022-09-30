@@ -1,0 +1,42 @@
+ALGORITHM Dot Product
+VAR
+     x : ARRAY_OF FLOAT[50];
+     y : ARRAY_OF FLOAT[50];
+     i, j : INTEGER;
+BEGIN
+    PROCEDURE dot_product(x,y)
+VAR
+    
+     ps : FLOAT;
+BEGIN
+  FOR i FROM 0 TO x.length STEP  DO
+  FOR i FROM 0 TO y.length STEP  DO
+
+    
+  END_FOR
+    ps+= x[i]*y[i];
+  END_FOR 
+END dot_product
+IF (dot_product(x,y)=0) THEN
+    Write ('x and y are orthogonal')
+END_IF
+FUNCTION dot_product_fun (x,y) : FLOAT
+VAR
+    
+     ps : FLOAT;
+BEGIN
+  FOR i FROM 0 TO x.length STEP  DO
+  FOR i FROM 0 TO y.length STEP  DO
+
+    
+  END_FOR
+    ps+= x[i]*y[i];
+  END_FOR 
+    RETURN ps ;
+END 
+
+
+END
+
+
+ 
